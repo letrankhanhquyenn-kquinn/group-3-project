@@ -36,7 +36,7 @@ export default function Profile() {
     const handleAvatarUpload = async (file) => {
         setAvatar(URL.createObjectURL(file));
 
-<<<<<<< HEAD
+
     const formData = new FormData();
    formData.append("avatar", file);
 
@@ -51,7 +51,7 @@ export default function Profile() {
       setMessage("❌ Lỗi khi upload avatar");
     }
   };
-=======
+
         const formData = new FormData();
         formData.append("avatar", file);
 
@@ -68,7 +68,7 @@ export default function Profile() {
             console.error("❌ Lỗi khi upload avatar", err);
         }
     };
->>>>>>> origin/feature/redux-protected
+
 
     const handleLogout = () => {
         dispatch(logout());
@@ -77,7 +77,7 @@ export default function Profile() {
 
     if (!user) return <p>⏳ Đang tải thông tin...</p>; 
 
-<<<<<<< HEAD
+
      
       <div style={{ textAlign: "center", marginBottom: "20px" }}>
         <UploadAvatar onUpload={handleAvatarUpload} />
@@ -89,13 +89,13 @@ export default function Profile() {
           />
         )}
       </div>
-=======
+
     return (
         <div style={styles.container}>
             <h2 style={styles.title}>👤 Thông tin cá nhân</h2>
             <p style={{textAlign: 'center', fontWeight: 'bold'}}>Xin chào, {user.email}</p> 
             {message && <p style={styles.message}>{message}</p>}
->>>>>>> origin/feature/redux-protected
+
 
             <div style={{ textAlign: "center", marginBottom: "20px" }}>
                 <UploadAvatar onUpload={handleAvatarUpload} />
