@@ -2,6 +2,9 @@
 import React from 'react';
 import AdminLogs from '../components/AdminLogs';
 import { useAuth } from '../auth/useAuth';
+import React, { useState, useEffect } from 'react';
+import { useSelector } from 'react-redux'; // 1. Import hook để lấy state
+import api from '../api/axios'; // 2. File api của bạn (sửa lại nếu sai đường dẫn)
 
 const AdminLogPage = () => {
   const { user } = useAuth();
@@ -16,9 +19,7 @@ const AdminLogPage = () => {
     </div>
   );
 
-import React, { useState, useEffect } from 'react';
-import { useSelector } from 'react-redux'; // 1. Import hook để lấy state
-import api from '../api/axios'; // 2. File api của bạn (sửa lại nếu sai đường dẫn)
+
 
 const AdminLogPage = () => {
     const [logs, setLogs] = useState([]);
