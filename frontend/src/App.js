@@ -11,7 +11,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 
 import Admin from "./pages/Admin";
-import ForgotPassword from "./pages/ForgotPassword";
+
 import AdminLogPage from "./pages/AdminLogPage"; // 1. Import trang Log
 import Navbar from "./components/Navbar";
 
