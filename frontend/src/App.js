@@ -6,14 +6,14 @@ import Profile from "./pages/Profile";
 import AdminLogPage from "./pages/AdminLogPage";
 import ForgotPassword from "./pages/ForgotPassword";
 import ResetPassword from "./pages/ResetPassword";
-
+import Navbar from "./components/Navbar";
 import { useState, useEffect } from "react";
 import axios from "axios";
 
 import Admin from "./pages/Admin";
 
-import AdminLogPage from "./pages/AdminLogPage"; // 1. Import trang Log
-import Navbar from "./components/Navbar";
+
+
 
 // 2. Import các component bảo vệ mà bạn đã tạo (theo Bước 6)
 import { ProtectedRoute, AdminRoute } from "./components/ProtectedRoute";
